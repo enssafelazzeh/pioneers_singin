@@ -72,8 +72,16 @@ class _MainScreenState extends State<MainScreen> {
                     //     )
                     //   ],
                     // ),
-                    Expanded(child: Container()),
+                    const SizedBox(
+                      width: 8,
+                    ),
                     footer(title: "Total", value: itemTotalPrice().toString()),
+                    Expanded(child: Container()),
+                    SizedBox(
+                      height: 80,
+                      child: TextButton(
+                          onPressed: () {}, child: const Text("CheckOut")),
+                    )
                     // Column(
                     //   children: [
                     //     Text("TotalPrice"),
